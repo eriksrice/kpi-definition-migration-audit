@@ -1,0 +1,29 @@
+{
+  "metric_id": "qualified_activation_rate",
+  "version": "2.0.0",
+  "numerator": {
+    "kind": "and",
+    "members": [
+      {"kind": "eligibility_at_signup", "required": true},
+      {"kind": "exclude_account_classes", "values": ["INTERNAL", "TEST"]},
+      {"kind": "signup_cohort", "granularity": "MONTH"},
+      {"kind": "elapsed_day_maturity", "days": 14},
+      {"kind": "core_action_within_days", "days": 14}
+    ]
+  },
+  "denominator": {
+    "kind": "and",
+    "members": [
+      {"kind": "eligibility_at_signup", "required": true},
+      {"kind": "exclude_account_classes", "values": ["INTERNAL", "TEST"]},
+      {"kind": "signup_cohort", "granularity": "MONTH"},
+      {"kind": "elapsed_day_maturity", "days": 14},
+      {"kind": "all_eligible_matured_signups"}
+    ]
+  },
+  "description": "Activation among all eligible matured signups.",
+  "owner": "fictional_product_analytics",
+  "effective_from": "2026-06",
+  "provenance_id": "METRIC-PROVENANCE-V2",
+  "supersedes_version": "1.0.0"
+}

@@ -1,0 +1,136 @@
+{
+  "audit_date": "2026-07-30",
+  "audit_scope": "all 93 tracked files in the final public hygiene tree before publication",
+  "excluded_paths": [],
+  "final_result": "PASS",
+  "searches": [
+    {
+      "finding_count": 0,
+      "id": "S01_ABSOLUTE_MACOS_HOME_PATHS",
+      "query_regex": "\\x2fUsers\\x2f"
+    },
+    {
+      "finding_count": 0,
+      "id": "S02_LOCAL_USERNAME",
+      "query_regex": "\\x65rikrice"
+    },
+    {
+      "finding_count": 0,
+      "id": "S03_CODEX_METADATA_PATHS",
+      "query_regex": "\\x2ecodex"
+    },
+    {
+      "finding_count": 0,
+      "id": "S04_ATTACHMENT_REFERENCES",
+      "query_regex": "\\x61ttachments"
+    },
+    {
+      "finding_count": 0,
+      "id": "S05_INTERNAL_PROGRAM_ACRONYM",
+      "query_regex": "\\x57TCHP"
+    },
+    {
+      "finding_count": 0,
+      "id": "S06_PORTFOLIO_SELECTION_DIRECTORY",
+      "query_regex": "\\x70ortfolio_final_selection"
+    },
+    {
+      "finding_count": 0,
+      "id": "S07_INTERNAL_SOURCE_NAME",
+      "query_regex": "\\x50remier Loop"
+    },
+    {
+      "finding_count": 0,
+      "id": "S08_PRIVATE_NEIGHBOR_DIRECTORY_PATHS",
+      "query_regex": "Documents\\x2f(\\x74ool-choice-contract-trial|\\x57TCHP-PG006-092|Synthetic Goodhart Trap Simulator)"
+    },
+    {
+      "allowed_exception_count": 1,
+      "allowed_exceptions": [
+        {
+          "kind": "reserved synthetic .invalid address",
+          "line": 108,
+          "path": "tests/test_contracts_and_identity.py"
+        }
+      ],
+      "disallowed_finding_count": 0,
+      "finding_count": 1,
+      "id": "S09_EMAIL_ADDRESSES",
+      "query_regex": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+    },
+    {
+      "finding_count": 0,
+      "id": "S10_CREDENTIAL_ASSIGNMENTS",
+      "query_regex": "(?i)(password|secret|access[_ -]?token|api[_ -]?key)\\s*[:=]\\s*\\S+"
+    },
+    {
+      "finding_count": 0,
+      "id": "S11_ACCESS_TOKEN_SIGNATURES",
+      "query_regex": "cloud-access-key|source-host-token|provider-secret-key signatures"
+    },
+    {
+      "finding_count": 0,
+      "id": "S12_PRIVATE_KEY_HEADERS",
+      "query_regex": "private-key PEM header signature"
+    },
+    {
+      "finding_count": 0,
+      "id": "S13_SENSITIVE_FILENAMES",
+      "query_regex": ".env, .env.*, *.pem, and *.key filenames"
+    },
+    {
+      "finding_count": 0,
+      "id": "S14_PHI_PII_CUSTOMER_IDENTIFIERS",
+      "query_regex": "\\x63ustomer_name|\\x70atient_name|\\x73ocial_security|\\x6dedical_record|\\x64ate_of_birth|word-boundary \\x53SN or \\x4dRN"
+    },
+    {
+      "allowed_exception_count": 1,
+      "allowed_exceptions": [
+        {
+          "kind": "intentional MIT copyright owner line",
+          "line": 3,
+          "path": "LICENSE"
+        }
+      ],
+      "finding_count": 1,
+      "id": "S15_INTENTIONAL_COPYRIGHT_OWNER",
+      "query_regex": "\\x45rik Rice"
+    },
+    {
+      "finding_count": 0,
+      "id": "S16_INTERNAL_PROJECT_CODE",
+      "query_regex": "\\x50CG006"
+    },
+    {
+      "finding_count": 0,
+      "id": "S17_INTERNAL_DELIVERABLE_CODE",
+      "query_regex": "\\x44009"
+    },
+    {
+      "finding_count": 0,
+      "id": "S18_INTERNAL_STAGE_1_TERM",
+      "query_regex": "\\x4dilestone 1"
+    },
+    {
+      "finding_count": 0,
+      "id": "S19_INTERNAL_STAGE_2_TERM",
+      "query_regex": "\\x4dilestone 2"
+    },
+    {
+      "finding_count": 0,
+      "id": "S20_INTERNAL_STAGE_3_TERM",
+      "query_regex": "\\x4dilestone 3"
+    },
+    {
+      "finding_count": 0,
+      "id": "S21_ACCEPTED_INTERNAL_STAGE_TERM",
+      "query_regex": "\\x61ccepted \\x4dilestone"
+    }
+  ],
+  "summary": {
+    "allowed_exception_count": 2,
+    "disallowed_finding_count": 0,
+    "scanned_file_count": 93,
+    "search_count": 21
+  }
+}

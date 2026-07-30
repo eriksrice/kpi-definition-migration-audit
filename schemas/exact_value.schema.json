@@ -1,0 +1,1 @@
+{"additionalProperties":false,"properties":{"denominator":{"exclusiveMinimum":0,"title":"Denominator","type":"integer"},"numerator":{"title":"Numerator","type":"integer"}},"required":["numerator","denominator"],"title":"ExactValue","type":"object"}

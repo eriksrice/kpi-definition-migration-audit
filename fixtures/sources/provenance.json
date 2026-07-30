@@ -1,0 +1,23 @@
+[
+  {
+    "provenance_id": "SRC-APR-ACTIVITY-FACT",
+    "snapshot_id": "golden-source-snapshot-2026-07-15",
+    "schema_version": "activity-qualified-account-fact/1.0.0",
+    "linkage_version": "account-linkage/1.0.0",
+    "completeness_declaration_id": "COVERAGE-DECLARATION-2026-04"
+  },
+  {
+    "provenance_id": "SRC-MAY-SIGNUP-ROSTER",
+    "snapshot_id": "golden-source-snapshot-2026-07-15",
+    "schema_version": "authoritative-signup-roster/1.0.0",
+    "linkage_version": "account-linkage/1.0.0",
+    "completeness_declaration_id": "COVERAGE-DECLARATION-2026-05"
+  },
+  {
+    "provenance_id": "SRC-JUN-SIGNUP-ROSTER",
+    "snapshot_id": "golden-source-snapshot-2026-07-15",
+    "schema_version": "authoritative-signup-roster/1.0.0",
+    "linkage_version": "account-linkage/1.0.0",
+    "completeness_declaration_id": "COVERAGE-DECLARATION-2026-06"
+  }
+]

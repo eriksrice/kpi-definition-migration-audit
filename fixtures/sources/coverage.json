@@ -1,0 +1,53 @@
+[
+  {
+    "cohort": "2026-04",
+    "complete": [
+      "control.cutoff_timezone",
+      "field.account_id",
+      "field.account_class",
+      "field.activity_at",
+      "field.activity_received_at",
+      "field.channel",
+      "field.core_action_at",
+      "field.core_action_received_at",
+      "field.eligible_at_signup",
+      "field.signup_at",
+      "population.activity_qualified_account_fact"
+    ],
+    "unavailable": ["population.authoritative_signup_roster"]
+  },
+  {
+    "cohort": "2026-05",
+    "complete": [
+      "control.cutoff_timezone",
+      "field.account_id",
+      "field.account_class",
+      "field.activity_at",
+      "field.activity_received_at",
+      "field.channel",
+      "field.core_action_at",
+      "field.core_action_received_at",
+      "field.eligible_at_signup",
+      "field.signup_at",
+      "population.activity_qualified_account_fact",
+      "population.authoritative_signup_roster"
+    ]
+  },
+  {
+    "cohort": "2026-06",
+    "complete": [
+      "control.cutoff_timezone",
+      "field.account_id",
+      "field.account_class",
+      "field.activity_at",
+      "field.activity_received_at",
+      "field.channel",
+      "field.core_action_at",
+      "field.core_action_received_at",
+      "field.eligible_at_signup",
+      "field.signup_at",
+      "population.activity_qualified_account_fact",
+      "population.authoritative_signup_roster"
+    ]
+  }
+]

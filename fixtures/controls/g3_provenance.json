@@ -1,0 +1,7 @@
+{
+  "provenance_id": "SRC-G3-ALTERNATE-SNAPSHOT",
+  "snapshot_id": "g3-source-snapshot-relinked-2026-07-16",
+  "schema_version": "authoritative-signup-roster/1.0.0",
+  "linkage_version": "account-linkage/1.0.0",
+  "completeness_declaration_id": "COVERAGE-DECLARATION-2026-06"
+}

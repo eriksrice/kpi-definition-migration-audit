@@ -1,0 +1,13 @@
+#!/bin/sh
+set -eu
+
+if [ ! -x .venv/bin/python ] || [ ! -x .venv/bin/ruff ]; then
+  echo "ERROR: project development environment not found." >&2
+  echo "Run ./scripts/bootstrap_environment once, then retry." >&2
+  exit 1
+fi
+
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src .venv/bin/python -m pytest -q \
+  -p no:cacheprovider
+.venv/bin/ruff check --no-cache src tests
+.venv/bin/ruff format --check --no-cache src tests

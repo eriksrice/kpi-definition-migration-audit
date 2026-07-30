@@ -1,0 +1,14 @@
+{
+  "contract_id": "golden_activation_decision_contract/1.0.0",
+  "threshold": {"numerator": 4, "denominator": 5},
+  "threshold_operator": "GREATER_THAN_OR_EQUAL",
+  "ranking": "DESCENDING_EXACT_WITH_TIES",
+  "trend_rule": "SAME_SEMANTICS_OR_EXPLICIT_RESTATEMENT",
+  "horizon_start": "2026-04",
+  "horizon_end": "2026-06",
+  "effective_cohort": "2026-06",
+  "cutoff": "2026-07-15T00:00:00Z",
+  "timezone": "UTC",
+  "maturity_days": 14,
+  "assumption_ids": ["A_THRESHOLD_SYNTHETIC_080", "A_TREND_SAME_SEMANTICS"]
+}

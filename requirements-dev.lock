@@ -1,0 +1,5 @@
+# Supported locked development environment (Python 3.12 only).
+# Install only from a pre-populated local wheelhouse; runtime execution needs no network.
+pydantic==2.13.4
+pytest==8.4.2
+ruff==0.15.22

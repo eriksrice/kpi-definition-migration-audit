@@ -1,0 +1,1 @@
+{"additionalProperties":false,"properties":{"decision_change_ids":{"items":{"type":"string"},"title":"Decision Change Ids","type":"array"},"value":{"const":"MULTIPLE","title":"Value","type":"string"}},"required":["value","decision_change_ids"],"title":"ImpactIndex","type":"object"}

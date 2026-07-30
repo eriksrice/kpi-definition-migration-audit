@@ -1,0 +1,1 @@
+{"additionalProperties":false,"properties":{"assumption_id":{"title":"Assumption Id","type":"string"},"classification":{"const":"SYNTHETIC_SCENARIO_ASSUMPTION","title":"Classification","type":"string"},"statement":{"title":"Statement","type":"string"}},"required":["assumption_id","statement","classification"],"title":"AssumptionRecord","type":"object"}

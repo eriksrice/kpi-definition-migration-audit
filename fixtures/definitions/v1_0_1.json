@@ -1,0 +1,29 @@
+{
+  "metric_id": "qualified_activation_rate",
+  "version": "1.0.1",
+  "numerator": {
+    "kind": "and",
+    "members": [
+      {"kind": "core_action_within_days", "days": 14},
+      {"kind": "elapsed_day_maturity", "days": 14},
+      {"kind": "signup_cohort", "granularity": "MONTH"},
+      {"kind": "exclude_account_classes", "values": ["TEST", "INTERNAL"]},
+      {"kind": "eligibility_at_signup", "required": true}
+    ]
+  },
+  "denominator": {
+    "kind": "and",
+    "members": [
+      {"kind": "qualifying_activity_within_days", "days": 14},
+      {"kind": "elapsed_day_maturity", "days": 14},
+      {"kind": "signup_cohort", "granularity": "MONTH"},
+      {"kind": "exclude_account_classes", "values": ["TEST", "INTERNAL"]},
+      {"kind": "eligibility_at_signup", "required": true}
+    ]
+  },
+  "description": "Presentation revision: eligible accounts with observed qualifying activity.",
+  "owner": "fictional_product_analytics",
+  "effective_from": "2026-04",
+  "provenance_id": "METRIC-PROVENANCE-V1-0-1",
+  "supersedes_version": "1.0.0"
+}

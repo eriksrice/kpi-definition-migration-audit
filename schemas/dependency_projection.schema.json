@@ -1,0 +1,1 @@
+{"additionalProperties":false,"properties":{"authority":{"const":"GENERATED_FROM_REGISTERED_CLAUSES","default":"GENERATED_FROM_REGISTERED_CLAUSES","title":"Authority","type":"string"},"dependencies":{"items":{"type":"string"},"title":"Dependencies","type":"array"}},"required":["dependencies"],"title":"DependencyProjection","type":"object"}

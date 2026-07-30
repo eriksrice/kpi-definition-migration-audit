@@ -1,0 +1,23 @@
+#!/bin/sh
+set -eu
+
+if [ -x .venv/bin/python ]; then
+  trial_python=.venv/bin/python
+elif command -v python3.12 >/dev/null 2>&1; then
+  trial_python="$(command -v python3.12)"
+else
+  echo "ERROR: project Python 3.12 environment not found." >&2
+  echo "Run ./scripts/bootstrap_environment once, then retry." >&2
+  exit 1
+fi
+
+if ! "${trial_python}" -c 'import sys, pydantic; assert sys.version_info[:2] == (3, 12)' \
+  >/dev/null 2>&1; then
+  echo "ERROR: ${trial_python} is not Python 3.12 with Pydantic v2." >&2
+  echo "Run ./scripts/bootstrap_environment once, then retry." >&2
+  exit 1
+fi
+
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src "${trial_python}" \
+  -m kpi_definition_change_trial golden \
+  --fixtures fixtures --output artifacts/golden --schemas schemas

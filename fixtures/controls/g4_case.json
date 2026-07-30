@@ -1,0 +1,7 @@
+{
+  "control_id": "G4",
+  "cohort": "2026-05",
+  "channel": "Beta",
+  "left_definition_ref": "qualified_activation_rate/1.0.0",
+  "right_definition_ref": "qualified_activation_rate/2.0.0"
+}

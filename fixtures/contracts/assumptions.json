@@ -1,0 +1,17 @@
+[
+  {
+    "assumption_id": "A_THRESHOLD_SYNTHETIC_080",
+    "statement": "The exact 4/5 threshold is synthetic and is not an empirical optimum.",
+    "classification": "SYNTHETIC_SCENARIO_ASSUMPTION"
+  },
+  {
+    "assumption_id": "A_MIN_BRIDGE_COHORTS_2",
+    "statement": "Two complete cohorts are sufficient for this scenario's bridge only.",
+    "classification": "SYNTHETIC_SCENARIO_ASSUMPTION"
+  },
+  {
+    "assumption_id": "A_TREND_SAME_SEMANTICS",
+    "statement": "Trend endpoints require equal semantics or explicit restatement under one definition.",
+    "classification": "SYNTHETIC_SCENARIO_ASSUMPTION"
+  }
+]

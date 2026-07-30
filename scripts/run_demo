@@ -1,0 +1,32 @@
+#!/bin/sh
+set -eu
+
+if [ ! -x .venv/bin/python ]; then
+  echo "ERROR: project Python 3.12 environment not found." >&2
+  echo "Run ./scripts/bootstrap_environment once, then retry." >&2
+  exit 1
+fi
+
+if ! .venv/bin/python -c 'import sys, pydantic; assert sys.version_info[:2] == (3, 12)' \
+  >/dev/null 2>&1; then
+  echo "ERROR: .venv/bin/python is not Python 3.12 with Pydantic v2." >&2
+  echo "Run ./scripts/bootstrap_environment once, then retry." >&2
+  exit 1
+fi
+
+demo_root=$(mktemp -d "${TMPDIR:-/tmp}/kpi-definition-change-demo.XXXXXX")
+trap 'rm -rf -- "$demo_root"' EXIT HUP INT TERM
+
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src .venv/bin/python \
+  -m kpi_definition_change_trial golden \
+  --fixtures fixtures \
+  --output "$demo_root/artifacts/golden" \
+  --schemas "$demo_root/schemas" \
+  >/dev/null
+
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src .venv/bin/python \
+  -m kpi_definition_change_trial.demo \
+  --generated-evidence "$demo_root/artifacts/golden" \
+  --accepted-evidence artifacts/golden \
+  --generated-schemas "$demo_root/schemas" \
+  --accepted-schemas schemas

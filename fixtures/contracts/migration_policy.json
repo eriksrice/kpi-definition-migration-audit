@@ -1,0 +1,17 @@
+{
+  "policy_id": "golden_activation_migration_policy/1.0.0",
+  "minimum_complete_bridge_cohorts": 2,
+  "restatement_start": "2026-05",
+  "restatement_end": "2026-06",
+  "bridge_start": "2026-05",
+  "bridge_end": "2026-06",
+  "effective_cohort": "2026-06",
+  "non_reconstructable_cohort": "2026-04",
+  "rules": [
+    {"rule_id": "MP-R01_RESTATE_FULL", "description": "Restate only fully reconstructable declared cohorts."},
+    {"rule_id": "MP-R02_BRIDGE_MIN_TWO", "description": "Dual-report the exact two-cohort bridge when both cohorts are complete."},
+    {"rule_id": "MP-R03_START_EFFECTIVE", "description": "Start official v2 at the owner-frozen effective cohort."},
+    {"rule_id": "MP-R04_NO_SPLICE", "description": "Mark unreconstructable history and cross-semantic stitches non-comparable."},
+    {"rule_id": "MP-R05_REJECT_CONTEXT_OR_EVIDENCE_GAP", "description": "Reject on controlled-context mismatch or required evidence gap."}
+  ]
+}
