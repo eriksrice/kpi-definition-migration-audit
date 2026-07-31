@@ -1,6 +1,6 @@
-# KPI Definition Change Trial - Evidence Card
+# KPI Definition Migration Audit - Evidence Card
 
-**Same records, different KPI meaning, different decisions.**
+**Same records. Different KPI meaning. Different decisions.**
 
 ## Definition change
 

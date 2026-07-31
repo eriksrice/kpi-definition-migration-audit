@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.3.1 — Project rename
+
+- Renamed the project to **KPI Definition Migration Audit**.
+- Renamed the public repository to `kpi-definition-migration-audit`.
+- Updated human-facing documentation, demo headings, package distribution metadata, and links.
+- Preserved the internal Python namespace and all accepted canonical evidence.
+- Added no new functionality.
+
 ## v0.3.0 — Deterministic demonstration and public release candidate
 
 - Added one fail-closed demonstration command and a machine-derived evidence card.

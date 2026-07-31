@@ -1,12 +1,12 @@
-# KPI Definition Change Trial
+# KPI Definition Migration Audit
 
-> Built a deterministic KPI-definition migration trial that identifies semantic breaks, determines restatement feasibility from declared source-coverage evidence, and quantifies threshold, ranking, and trend consequences before cutover.
+> Built a deterministic KPI-definition migration audit that identifies semantic breaks, determines restatement feasibility from declared source-coverage evidence, and quantifies threshold, ranking, and trend consequences before cutover.
 
 ## The problem
 
-A KPI can keep the same name while a changed denominator alters its meaning, breaks historical comparability, and reverses decisions. This trial holds the records and decision contract fixed, changes one KPI definition, and determines what can be safely restated.
+A KPI can keep the same name while a changed denominator alters its meaning, breaks historical comparability, and reverses decisions. This audit holds the records and decision contract fixed, changes one KPI definition, and determines what can be safely restated.
 
-**Same records, different KPI meaning, different decisions.**
+**Same records. Different KPI meaning. Different decisions.**
 
 ## The 60-second proof
 
@@ -49,9 +49,9 @@ The one-screen companion is [the evidence card](artifacts/demo/evidence_card.md)
 
 ## Why this is not Goodhart or tool choice
 
-**Goodhart:** Goodhart holds the metric fixed and changes behavior under pressure; this trial holds the records fixed, changes the metric's meaning, and determines what history and decisions must be restated.
+**Goodhart:** Goodhart holds the metric fixed and changes behavior under pressure; this audit holds the records fixed, changes the metric's meaning, and determines what history and decisions must be restated.
 
-**Tool choice:** Tool-choice evaluation tests whether a selected tool satisfies a declared task contract; this trial tests whether KPI definitions denote comparable quantities and what history must be restated.
+**Tool choice:** Tool-choice evaluation tests whether a selected tool satisfies a declared task contract; this audit tests whether KPI definitions denote comparable quantities and what history must be restated.
 
 ## Architecture and reliability
 

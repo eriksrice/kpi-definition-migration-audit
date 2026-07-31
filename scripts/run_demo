@@ -14,7 +14,7 @@ if ! .venv/bin/python -c 'import sys, pydantic; assert sys.version_info[:2] == (
   exit 1
 fi
 
-demo_root=$(mktemp -d "${TMPDIR:-/tmp}/kpi-definition-change-demo.XXXXXX")
+demo_root=$(mktemp -d "${TMPDIR:-/tmp}/kpi-definition-migration-audit-demo.XXXXXX")
 trap 'rm -rf -- "$demo_root"' EXIT HUP INT TERM
 
 PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src .venv/bin/python \

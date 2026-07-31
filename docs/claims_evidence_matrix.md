@@ -4,13 +4,13 @@ These bounded assets are approved for release-candidate review. They do not supp
 
 ## Approved headline
 
-> Built a deterministic KPI-definition migration trial that identifies semantic breaks, determines restatement feasibility from declared source-coverage evidence, and quantifies threshold, ranking, and trend consequences before cutover.
+> Built a deterministic KPI-definition migration audit that identifies semantic breaks, determines restatement feasibility from declared source-coverage evidence, and quantifies threshold, ranking, and trend consequences before cutover.
 
 ## Auditable claim boundaries
 
 | Permitted claim | Machine artifact | Exact evidence | Supporting test | Prohibited overclaim |
 |---|---|---|---|---|
-| Deterministic KPI-definition migration trial | `bundle_manifest.json`; `definition_diff.json` | Canonical bundle ID; `semantic_relation=NON_EQUIVALENT` | C12; D01; D10 | Enterprise metric-governance platform |
+| Deterministic KPI-definition migration audit | `bundle_manifest.json`; `definition_diff.json` | Canonical bundle ID; `semantic_relation=NON_EQUIVALENT` | C12; D01; D10 | Enterprise metric-governance platform |
 | Determines restatement feasibility from declared source evidence | `cohort_reconstructability.json`; `horizon_coverage.json` | April v2 `NOT_RECONSTRUCTABLE`; May/June v2 `FULLY_RECONSTRUCTABLE`; horizon `PARTIAL` | C07; C17; D01 | Automatically discovers all missing history |
 | Quantifies demonstrated decision consequences | `calculations.json`; `decision_changes.json`; `comparisons.json` | May Alpha result IDs; threshold/rank change IDs; both trend comparison IDs | C08–C09; H01–H03; D03–D05 | Proves universal business impact |
 | Produces a recommendation pending human approval | `migration_plan.json` | `PARTIAL_RESTATEMENT`; four actions; approval `PENDING` | C11; C20; H04–H05; EC08–EC11; D06 | Autonomously approves migrations |

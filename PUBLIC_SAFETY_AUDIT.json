@@ -1,6 +1,6 @@
 {
-  "audit_date": "2026-07-30",
-  "audit_scope": "all 93 tracked files in the final public hygiene tree before publication",
+  "audit_date": "2026-07-31",
+  "audit_scope": "all 93 tracked files in the v0.3.1 public rename tree before publication",
   "excluded_paths": [],
   "final_result": "PASS",
   "searches": [
@@ -125,12 +125,37 @@
       "finding_count": 0,
       "id": "S21_ACCEPTED_INTERNAL_STAGE_TERM",
       "query_regex": "\\x61ccepted \\x4dilestone"
+    },
+    {
+      "finding_count": 0,
+      "id": "S22_OLD_DISPLAY_NAME",
+      "query_regex": "\\x4bPI Definition Change Trial"
+    },
+    {
+      "finding_count": 0,
+      "id": "S23_OLD_REPOSITORY_SLUG",
+      "query_regex": "\\x6bpi-definition-change-trial"
+    },
+    {
+      "finding_count": 0,
+      "id": "S24_OLD_PRIVATE_LOCAL_PATH",
+      "query_regex": "\\x2fUsers\\x2f\\x65rikrice\\x2fDocuments\\x2f\\x6bpi-definition-change-trial"
+    },
+    {
+      "finding_count": 0,
+      "id": "S25_OLD_PUBLIC_LOCAL_PATH",
+      "query_regex": "\\x2fUsers\\x2f\\x65rikrice\\x2fDocuments\\x2f\\x6bpi-definition-change-trial-public"
+    },
+    {
+      "finding_count": 0,
+      "id": "S26_OLD_WRAPPER_LOCAL_PATH",
+      "query_regex": "\\x2fUsers\\x2f\\x65rikrice\\x2fDocuments\\x2f\\x50CG006-\\x44009 - \\x4bPI Definition Change Trial"
     }
   ],
   "summary": {
     "allowed_exception_count": 2,
     "disallowed_finding_count": 0,
     "scanned_file_count": 93,
-    "search_count": 21
+    "search_count": 26
   }
 }

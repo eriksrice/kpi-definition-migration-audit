@@ -8,6 +8,6 @@ For history, splicing May under version one to June under version two suggests a
 
 April cannot be restated because the all-signup population was not retained. The plan is to restate and dual-report May through June, start the official version-two series in June, and mark April and cross-version stitches non-comparable. Approval remains pending.
 
-If the source context changes too, the trial refuses definition-only attribution and returns `REJECT_PENDING_EVIDENCE`.
+If the source context changes too, the audit refuses definition-only attribution and returns `REJECT_PENDING_EVIDENCE`.
 
 This is not Goodhart: behavior stays fixed while the metric’s meaning changes.

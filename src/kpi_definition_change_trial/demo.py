@@ -230,7 +230,7 @@ def render_terminal(evidence: DemoEvidence) -> str:
         f"({format_percent(evidence.after_value)})"
     )
     lines = [
-        "KPI DEFINITION CHANGE TRIAL",
+        "KPI DEFINITION MIGRATION AUDIT",
         "Same records. Different KPI meaning. Different decisions.",
         "",
         f"1. DEFINITION - SAME RECORDS + DECISION CONTRACT: {str(evidence.context_fixed).upper()}",
@@ -278,9 +278,9 @@ def render_evidence_card(evidence: DemoEvidence) -> str:
         f"{format_percent(evidence.after_value)}"
     )
     lines = [
-        "# KPI Definition Change Trial - Evidence Card",
+        "# KPI Definition Migration Audit - Evidence Card",
         "",
-        "**Same records, different KPI meaning, different decisions.**",
+        "**Same records. Different KPI meaning. Different decisions.**",
         "",
         "## Definition change",
         "",
@@ -359,7 +359,7 @@ def validate_canonical_match(
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Render the fixed KPI-definition trial demo")
+    parser = argparse.ArgumentParser(description="Render the fixed KPI-definition audit demo")
     parser.add_argument("--generated-evidence", type=Path, required=True)
     parser.add_argument("--accepted-evidence", type=Path, required=True)
     parser.add_argument("--generated-schemas", type=Path, required=True)

@@ -1,4 +1,4 @@
-"""Deterministic KPI definition change trial."""
+"""Deterministic KPI definition migration audit."""
 
 from .runner import build_evidence
 

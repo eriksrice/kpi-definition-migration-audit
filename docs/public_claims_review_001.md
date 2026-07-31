@@ -6,7 +6,7 @@ This review approves the following bounded repository assets for release-candida
 
 ## Repository description
 
-> Deterministic KPI-definition migration trial that tests historical comparability, quantifies threshold, ranking, and trend reversals, and produces an auditable restatement plan.
+> Deterministic KPI-definition migration audit that tests historical comparability, quantifies threshold, ranking, and trend reversals, and produces an auditable restatement plan.
 
 ## Suggested topics
 
@@ -21,7 +21,7 @@ This review approves the following bounded repository assets for release-candida
 
 ## Primary resume bullet
 
-> Built a deterministic KPI-definition migration trial that executes versioned metric contracts against frozen records, identifies non-comparable history, quantifies threshold, ranking, and trend reversals, and produces an auditable partial-restatement plan with fail-closed confound checks.
+> Built a deterministic KPI-definition migration audit that executes versioned metric contracts against frozen records, identifies non-comparable history, quantifies threshold, ranking, and trend reversals, and produces an auditable partial-restatement plan with fail-closed confound checks.
 
 ## Supporting technical bullet
 
@@ -31,7 +31,7 @@ This review approves the following bounded repository assets for release-candida
 
 | Clause | Evidence | Result |
 |---|---|---|
-| Deterministic trial and replay | `bundle_manifest.json`; C12; D01; D10 | `SUPPORTED` |
+| Deterministic audit and replay | `bundle_manifest.json`; C12; D01; D10 | `SUPPORTED` |
 | Versioned metric contracts and frozen records | `identities.json`; `trial_arms.json`; controlled context | `SUPPORTED` |
 | Historical comparability and non-comparable history | both records in `comparisons.json` | `SUPPORTED` |
 | Threshold, ranking, and trend reversals | `decision_changes.json`; `comparisons.json` | `SUPPORTED` |
